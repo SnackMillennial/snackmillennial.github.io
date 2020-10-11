@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- my CSS -->
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <title>Snack Millennial</title>
+    </head>
+
+    <body>
+      
+      <!-- navbar -->
+      <div class="navbar-fixed">
+        <nav class="blue accent-3">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo">Snack Millennial</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Our Products</a></li>
+                <li><a href="">Our Stores</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- sidenav -->
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Our Products</a></li>
+        <li><a href="">Our Stores</a></li>
+        <li><a href="">Contact Us</a></li>      
+      </ul>  
+
+      <!-- slider -->
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/slider/1.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Snack Millennial</h3>
+              <h5 class="black-text">ini perlu ada ga?</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slider/2.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Snack Millennial</h3>
+              <h5 class="light grey-text text-lighten-3">ini perlu ada ga?</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slider/3.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Snack Millennial</h3>
+              <h5 class="black-text">ini perlu ada ga?</h5>
+            </div>
+          </li>
+        </ul>
+      </div> 
+
+
+
+      <!-- About Us -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="row">
+            <h3 class="center">About Us</h3>
+            <div class="col m6 light">
+              <h5>Snack Millennial</h5>
+              <p>Ada ide gak buat isi ini?</p>
+            </div>
+            <div class="col m6 light">
+              <h5></h5>
+              <br>
+              <p>Ini masih bagian dari About Us</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Our Stores -->
+      <div class="parallax-container clients">
+        <div class="parallax"><img src="img/slider/3.jpg"></div>
+
+        <div class="container">
+        <h3 class="center light white-text">Our Stores</h3> 
+        <div class="row">
+          <div class="col m6 s12 center">
+            <img src="img/Our Stores/shopee.png">
+          </div>
+          <div class="col m6 s12 center">
+            <img src="img/Our Stores/shopee.png">
+          </div>
+          </div>
+      </div>
+      </div>
+        
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider,{
+          indicators: false,
+          height: 500,
+          transition: 600,
+          interval: 3000
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+
+      </script>
+    </body>
+</html>
