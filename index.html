@@ -15,20 +15,20 @@
       <title>Snack Millennial</title>
     </head>
 
-    <body>
+    <body id="home" class="scrollspy"> 
       
       <!-- navbar -->
       <div class="navbar-fixed">
         <nav class="blue accent-3">
           <div class="container">
             <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">Snack Millennial</a>
+              <a href="#home" class="brand-logo">SnackMillennial</a>
               <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Our Products</a></li>
-                <li><a href="">Our Stores</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#product">Our Product</a></li>
+                <li><a href="#store">Our Stores</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -37,34 +37,26 @@
 
       <!-- sidenav -->
       <ul class="sidenav" id="mobile-nav">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Our Products</a></li>
-        <li><a href="">Our Stores</a></li>
-        <li><a href="">Contact Us</a></li>      
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#product">Our Products</a></li>
+        <li><a href="#store">Our Stores</a></li>
+        <li><a href="#contact">Contact Us</a></li>      
       </ul>  
 
       <!-- slider -->
       <div class="slider">
         <ul class="slides">
           <li>
-            <img src="img/slider/1.jpg"> <!-- random image -->
-            <div class="caption left-align">
-              <h3>Snack Millennial</h3>
-              <h5 class="black-text">ini perlu ada ga?</h5>
+            <img src="img/slider/3.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3 class="black-text"></h3>
             </div>
           </li>
           <li>
             <img src="img/slider/2.jpg"> <!-- random image -->
             <div class="caption center-align">
-              <h3>Snack Millennial</h3>
-              <h5 class="light grey-text text-lighten-3">ini perlu ada ga?</h5>
-            </div>
-          </li>
-          <li>
-            <img src="img/slider/3.jpg"> <!-- random image -->
-            <div class="caption left-align">
-              <h3>Snack Millennial</h3>
-              <h5 class="black-text">ini perlu ada ga?</h5>
+              <h3></h3>
+              <h5 class="light grey-text text-lighten-3"></h5>
             </div>
           </li>
         </ul>
@@ -73,43 +65,120 @@
 
 
       <!-- About Us -->
-      <section id="about" class="about">
+      <section id="about" class="about scrollspy">
         <div class="container">
           <div class="row">
-            <h3 class="center">About Us</h3>
+            <h3 class="center black-text">About Us</h3>
             <div class="col m6 light">
-              <h5>Snack Millennial</h5>
-              <p>Ada ide gak buat isi ini?</p>
+              <p>Snack Millennial adalah project dari Millennial Squad yang terdiri dari 5 mahasiswa Trisakti School of Management dimana kami menyediakan berbagai jenis cemilan yang enak, murah, dan bervariasi untuk menjadi teman saat mengerjakan tugas, kumpul dengan teman atau keluarga, ataupun bersantai.</p>
             </div>
-            <div class="col m6 light">
-              <h5></h5>
-              <br>
-              <p>Ini masih bagian dari About Us</p>
+            <div class="col m6 s12">
+              <p>Rasa</p>
+              <div class="progress">
+                <div class="determinate" style="width:85%"></div>
+              </div>
+            </div>
+            <div class="col m6 s12">
+              <p>Kualitas</p>
+              <div class="progress">
+                <div class="determinate" style="width:90%"></div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- our products -->
+      <section id="product" class="portofolio scrollspy">
+        <div class="container product">
+          <h3 class="center black-text">Our Products</h3>
+          <div class="row">
+            <div class="col m3 s12 center">
+              <img src="img/our product/basreng.jpg" class="responsive-img materialboxed">
+              <p>Baso Goreng</p>
+            </div>
+            <div class="col m3 s12 center">
+              <img src="img/our product/keripik singkong.jpg" class="responsive-img materialboxed">
+              <p>Keripik Singkong</p>
+            </div>
+            <div class="col m3 s12 center">
+              <img src="img/our product/mi lidi.jpg" class="responsive-img materialboxed">
+              <p>Mi Lidi</p>
+            </div>
+            <div class="col m3 s12 center">
+              <img src="img/our product/makaroni.jpg" class="responsive-img materialboxed">
+              <p>Makaroni Goreng</p>
             </div>
           </div>
         </div>
       </section>
 
 
+      <!-- our stores -->
+      <div id="store" class="parallax-container scrollspy">
+        <div class="parallax"><img src="img/our stores/ourstores.jpg"></div>
 
-      <!-- Our Stores -->
-      <div class="parallax-container clients">
-        <div class="parallax"><img src="img/slider/3.jpg"></div>
-
-        <div class="container">
-        <h3 class="center light white-text">Our Stores</h3> 
+        <div class="container stores">
+        <h3 class="center black-text">Our Stores</h3> 
         <div class="row">
           <div class="col m6 s12 center">
-            <img src="img/Our Stores/shopee.png">
+            <img src="img/Our Stores/tokped.svg">
           </div>
           <div class="col m6 s12 center">
-            <img src="img/Our Stores/shopee.png">
+            <img src="img/Our Stores/shopee1.png">
           </div>
           </div>
       </div>
       </div>
         
 
+
+
+      <!-- contact us -->
+      <section id="contact" class="contact grey lighten-3 scrollspy">
+        <div class="container">
+          <h3 class="grey-text text darken-3 center">Contact Us</h3>
+          <div class="row">
+            <div class="col m5 s12">
+              <div class="card-panel blue darken-2 center white-text">
+                <i class="material-icons">email</i>
+                <h5>Contact</h5>
+                <p>+62-12345656</p>
+                <p>snackmillennial00@gmail.com</p>
+              </div>
+            </div>
+            <div class="col m7 s12">
+              <form>
+                <div class="card-panel">
+                  <h5>Please fill out this form</h5>
+                  <div class="input-field">
+                    <input type="text" name="name" id="name" class="validate">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="email" name="email" id="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" name="phone" id="phone">
+                    <label for="phone">Phone Number</label>
+                  </div>
+                  <div class="input-field">
+                    <textarea name="message" id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <button type="submit" class="btn blue darken-2">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- footer -->
+      <footer class="blue darken-3 white-text center">
+        <p class="flow-text">Snack Millennial. Copyright 2020</p>
+      </footer>
 
 
       <!--JavaScript at end of body for optimized loading-->
@@ -129,6 +198,13 @@
         const parallax = document.querySelectorAll('.parallax');
         M.Parallax.init(parallax);
 
+        const materialbox = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(materialbox)
+
+        const scroll = document.querySelectorAll('.scrollspy')
+        M.ScrollSpy.init(scroll, {
+          scrollOffset: 70
+        });
 
       </script>
     </body>

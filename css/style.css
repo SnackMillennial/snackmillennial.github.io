@@ -1,16 +1,33 @@
 .slider h3,
 .slider h5 
-.clients h3{
-		text-shadow: 5px 3px 3px rgba(0,0,0,0.5);
+.stores h3{
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 
 .parallax-container {
-	height: 20%;
+	height: 240px;
 }
 
 
 .parallax img {
 	filter: grayscale(1);
 	opacity: 0.5 !important;
+}
+
+
+.stores img {
+	min-width: 200px;
+	max-width: 300px;
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5);)
+}
+
+.product img {
+	max-width: 200px;
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5);)
+}
+
+
+footer {
+	padding: 15px 0;
 }
